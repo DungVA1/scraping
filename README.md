@@ -1,11 +1,11 @@
-#Install
+##Install
 npm install
 
-#Run
+##Run
 npm start
 
-#Build
+##Build
 npm run build
 
-#Run dev
+##Run dev
 npm run dev
