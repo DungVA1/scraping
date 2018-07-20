@@ -1,11 +1,5 @@
-##Install
-npm install
+# Scraper
+TEST PROJECT
 
-##Run
-npm start
-
-##Build
-npm run build
-
-##Run dev
-npm run dev
+## Install
+npm i
