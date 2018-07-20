@@ -13,7 +13,7 @@ export default {
 
         app.listen(3000, () => {
           console.log('Application is listening at 3000 ...');
-          resolve();
+          resolve(app);
         });
       } catch (err) {
         reject(err);
