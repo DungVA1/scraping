@@ -11,7 +11,7 @@ const paramsValidator = (offset) => {
   return pageNumber;
 };
 
-const scraper = async (pageNumber, category) => {
+const scraper = async (pageNumber, category, init) => {
   const api = process.env.API || 'books.toscrape.com';
   let url;
   if (pageNumber) {
@@ -28,10 +28,14 @@ const scraper = async (pageNumber, category) => {
   } catch (err) {
     response = err;
   }
-  if ($) {
+  if ($ && init) {
     response = {
       book: bookExtrator($),
       category: categoryExtractor($),
+    };
+  } else {
+    response = {
+      book: bookExtrator($),
     };
   }
 
